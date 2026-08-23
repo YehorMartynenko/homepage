@@ -21,6 +21,8 @@ body {
   color: var(--text-color);
   padding: 2rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 /* header section */
@@ -36,8 +38,7 @@ header {
 }
 
 .header-image {
-  width: 480px;
-  height: 480px;
+  height: 100%;
   box-shadow: -7px 6px 15px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -73,7 +74,7 @@ header {
 
 .about-me .social-links img {
   margin-top: 1rem;
-  width: 32px;
+  max-width: 32px;
 }
 
 /* main section */
@@ -114,7 +115,7 @@ header {
   gap: 0.5rem;
 }
 .work-links img {
-  width: 24px;
+  max-width: 24px;
 }
 
 .work-info p {
@@ -131,8 +132,7 @@ footer {
 }
 
 .footer-image {
-  width: 480px;
-  height: 480px;
+  height: 100%;
 }
 
 footer h2 {
@@ -150,12 +150,12 @@ footer h2 {
 }
 
 .contact-item img {
-  width: 1rem;
+  max-width: 1rem;
 }
 
 footer .social-links {
   margin-top: 1rem;
-  width: 2rem;
+  max-width: 2rem;
 }
 
 /* other */
@@ -175,4 +175,19 @@ footer .social-links {
 .social-links img:focus,
 .work-links img:focus {
   transform: scale(1.05);
+}
+
+/* media */
+
+@media (max-width: 850px) {
+  .header-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-image {
+    display: none;
+  }
 }
