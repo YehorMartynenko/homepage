@@ -120,3 +120,40 @@ header {
 .work-info p {
   margin: 0.5rem;
 }
+
+/* footer section */
+
+footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.footer-image {
+  width: 480px;
+  height: 480px;
+}
+
+footer h2 {
+  margin-bottom: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+.address {
+  margin: 1rem 0 1rem 0;
+}
+
+.contact-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contact-item img {
+  width: 1rem;
+}
+
+footer .social-links {
+  margin-top: 1rem;
+  width: 2rem;
+}

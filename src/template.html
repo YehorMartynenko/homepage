@@ -212,7 +212,7 @@
 
     <footer>
       <section class="contact-me">
-        <h1>Contact me</h1>
+        <h2>Contact me</h2>
         <p>
           Please get in touch if you think our work could be matually beneficial
         </p>
@@ -235,9 +235,14 @@
         </div>
       </section>
       <img
+        class="footer-image"
         alt="Photo of me(100% real)"
-        src="images/footer-image-240w.jpg"
-        srcset="images/footer-image-480w.jpg 2x"
+        src="images/footer-image-480w.jpg"
+        srcset="
+          images/footer-image-240w.jpg 240w,
+          images/footer-image-480w.jpg 480w
+        "
+        sizes="(max-width: 600px) 240px, 480px"
       />
     </footer>
   </body>
