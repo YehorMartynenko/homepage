@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
+
+:root {
+  --bg-color: #ebe6d1;
+  --text-color: #1a1a1a;
+  --accent-red: #c8232a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "DM Serif Display", serif;
+  background-color: var(--bg-color);
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--text-color);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* header section */
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0 4rem 0;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-image {
+  width: 480px;
+  height: 480px;
+  box-shadow: -7px 6px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  color: white;
+  font-size: 3rem;
+}
+
+.about-me {
+  background-color: hwb(45 73% 1%);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  height: fit-content;
+  font-size: 1.2rem;
+}
+
+.about-me > h1 {
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.about-me .social-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-me .social-links img {
+  margin-top: 1rem;
+  width: 32px;
+}
+
+/* main section */
+
+.work-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  justify-content: center;
+  gap: 2rem 2rem;
+}
+
+.my-work > h2 {
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.my-work {
+  margin-bottom: 4rem;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.3);
+}
+
+.name-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.work-links .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.work-links img {
+  width: 24px;
+}
+
+.work-info p {
+  margin: 0.5rem;
+}
