@@ -157,3 +157,22 @@ footer .social-links {
   margin-top: 1rem;
   width: 2rem;
 }
+
+/* other */
+
+.social-links,
+.work-links {
+  cursor: pointer;
+}
+
+.social-links img,
+.work-links img {
+  will-change: transform;
+}
+
+.social-links img:hover,
+.work-links img:hover,
+.social-links img:focus,
+.work-links img:focus {
+  transform: scale(1.05);
+}
