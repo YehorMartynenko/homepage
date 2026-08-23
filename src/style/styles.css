@@ -115,7 +115,7 @@ header {
   gap: 0.5rem;
 }
 .work-links img {
-  max-width: 24px;
+  width: 24px;
 }
 
 .work-info p {
